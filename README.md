@@ -4,6 +4,9 @@
 
 :hugs: More details about **the most popular coreference resolution libraries** (followed by their their strengths and weaknesses) can be found in our [second blog article](https://neurosys.com/rd/).
 
+:ok_hand: Some finger points concerning mentioned libraries and **improvements upon AllenNLP and Huggingface solutions** are described in detail in our [last blog post]().
+
+
 ## What is coreference resolution 
 Coreference resolution (CR) is a NLP task that aims to group expressions refering to the same real-world entity to acquire less ambiguous text. It can be very useful in such tasks as text understanding, information extraction, summarization, or question answering. 
 
@@ -17,11 +20,11 @@ We've encountered some difficulties during the installation of both libraries in
 ```python
 pip install spacy==2.1.0
 python -m spacy download en_core_web_sm
-pip install neuralcoref --no-binary neuralcoref --no-cache-dir
-pip install allennlp --no-cache-dir
-pip install --pre allennlp-models --no-cache-dir
+pip install neuralcoref --no-binary neuralcoref
+pip install allennlp
+pip install --pre allennlp-models
 ```
-We've found the smallest `spaCy` model (`en_core_web_sm`) sufficient and not deviating from larger models but feel free to download whatever model seems best for you.
+We consider the smallest `spaCy` model (`en_core_web_sm`) sufficient and not deviating from larger models but feel free to download whatever model seems best for you.
 
 
 ## References
