@@ -2,9 +2,9 @@
 
 :information_source: More theoretical background supported by examples can be found in our [introductory blog post](https://neurosys.com/article/intro-to-coreference-resolution-in-nlp/).  
 
-:hugs: More details about **the most popular coreference resolution libraries** (followed by their their strengths and weaknesses) can be found in our [second blog article](https://neurosys.com/rd/).
+:hugs: More details about **the most popular coreference resolution libraries** (followed by their strengths, weaknesses, and problems) can be found in our [second blog article](https://neurosys.com/rd/).
 
-:ok_hand: Some finger points concerning mentioned libraries and **improvements upon AllenNLP and Huggingface solutions** are described in detail in our [last blog post]().
+:ok_hand: Some ideas concerning mentioned libraries and **improvements upon AllenNLP and Huggingface solutions** are described in detail in our [last blog post]().
 
 
 ## What is coreference resolution 
@@ -30,12 +30,9 @@ We consider the smallest `spaCy` model (`en_core_web_sm`) sufficient and not dev
 
 
 ## Improvements upon the libraries
-We've encountered several problems with clusters resolving in a text (the last step of replacing found mentions). As `AllenNLP` seems to find more suitable clusters (makes significantly fewer mistakes) we've decided to focus on this model. That's why we propose several improvements regarding its `replace_corefs` method:
-- do not resolve the cluster if it doesn't contain any noun phrases,
-- do not choose a pronoun as a head of the cluster (pick a noun phrase),
-- do not resolve outer spans in the case of nested mentions.
+We've encountered several problems with clusters resolving in a text (the last step of replacing found mentions). As `AllenNLP` seems to find more suitable clusters (makes significantly fewer mistakes), we've decided to focus on this model. That's why we propose several improvements regarding its `replace_corefs` method.
 
-:arrow_right: More details are provided by the `improvements_upon_allennlp_cr.ipynb` notebook.
+:arrow_right: More details are provided by the `improvements_to_allennlp_cr.ipynb` notebook.
 
 However, we still believe that `Huggingface NeuralCoref` is a valuable model that serves great as a reference. That's why we came up with a couple of intersection strategies - simply an ensemble of both models' outputs (clusters).   
 
