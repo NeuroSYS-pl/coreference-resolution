@@ -2,9 +2,9 @@
 
 :information_source: More theoretical background supported by examples can be found in our [introductory blog post](https://neurosys.com/article/intro-to-coreference-resolution-in-nlp/).  
 
-:hugs: More details about **the most popular coreference resolution libraries** (followed by their strengths, weaknesses, and problems) can be found in our [second blog article](https://neurosys.com/rd/).
+:hugs: More details about **the most popular coreference resolution libraries** (followed by their strengths, weaknesses, and problems) can be found in our [second blog article](https://neurosys.com/article/most-popular-frameworks-for-coreference-resolution/).
 
-:ok_hand: Some ideas concerning mentioned libraries and **improvements upon AllenNLP and Huggingface solutions** are described in detail in our [last blog post]().
+:ok_hand: Some ideas concerning mentioned libraries and **improvements upon AllenNLP and Huggingface solutions** are described in detail in our [last blog post](https://neurosys.com/article/how-to-make-an-effective-coreference-resolution-model/).
 
 
 ## What is coreference resolution 
